@@ -9,7 +9,7 @@ html, body {
   background-color: #f4f4f4;
   color: #333;
   height: 100%;
-  overflow: hidden; /* 🔒 Bloquea cualquier scroll */
+  overflow: hidden;
 }
 
 body {
@@ -33,7 +33,7 @@ h1 {
 }
 
 .calendar-container {
-  flex-grow: 1; /* ⚙️ Ocupará todo el espacio vertical restante */
+  flex-grow: 1;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -59,3 +59,18 @@ footer {
   background-color: #f9f9f9;
 }
 
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  text-align: center;
+  margin: 0 auto;           /* 🔥 Esto centra el div dentro del header */
+  width: fit-content;       /* ⚙️ Ajusta el ancho al contenido */
+}
+
+.logo {
+  height: 35px;
+  width: auto;
+}
