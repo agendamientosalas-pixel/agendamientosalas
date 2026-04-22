@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  height: 100%;
+  overflow: hidden; /* 🔒 Bloquea cualquier scroll */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #3949ab;
+  color: white;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.calendar-container {
+  flex-grow: 1; /* ⚙️ Ocupará todo el espacio vertical restante */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  background: white;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 4px;
+}
+
+footer {
+  flex-shrink: 0;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #888;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
